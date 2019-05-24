@@ -1,0 +1,101 @@
+[LightGBM] [Warning] feature_fraction is set=0.2319, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.2319
+[LightGBM] [Warning] bagging_freq is set=5, subsample_freq=0 will be ignored. Current value: bagging_freq=5
+[LightGBM] [Warning] min_sum_hessian_in_leaf is set=11, min_child_weight=0.001 will be ignored. Current value: min_sum_hessian_in_leaf=11
+[LightGBM] [Warning] min_data_in_leaf is set=6, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=6
+[LightGBM] [Warning] bagging_fraction is set=0.8, subsample=1.0 will be ignored. Current value: bagging_fraction=0.8
+2019-05-24.py
+fields.pdf
+first_try.txt
+nohup.out
+__pycache__
+submit_test.csv
+test.csv
+train.csv
+
+The train data size before dropping Id feature is : (60000, 235) 
+The test data size before dropping Id feature is : (10000, 234) 
+
+The train data size after dropping Id feature is : (60000, 234) 
+The test data size after dropping Id feature is : (10000, 233) 
+
+ mu = 11030913.13 and sigma = 20147964.10
+
+
+ mu = 15.51 and sigma = 1.14
+
+all_data size is : (69843, 233)
+Shape all_data: (69843, 231)
+
+Skew in numerical features: 
+
+There are 231 skewed numerical features to Box Cox transform
+(69843, 231)
+(59843, 231)
+(10000, 231)
+III_10                    0.000
+III_100                   0.000
+III_1000                  0.000
+III_10000                 0.000
+III_250                   0.000
+III_50                    0.000
+III_500                   0.000
+III_5000                  0.000
+III_MIN                   0.000
+III_index_1000            0.000
+III_index_10000           0.000
+III_index_50              0.000
+III_index_500             0.000
+III_index_5000            0.000
+II_10                     0.000
+II_100                    0.000
+II_1000                   0.000
+II_10000                  0.000
+II_250                    0.000
+II_50                     0.000
+II_500                    0.000
+II_5000                   0.000
+II_MIN                    0.000
+II_index_1000             0.000
+II_index_10000            0.000
+II_index_50               0.000
+II_index_500              0.000
+II_index_5000             0.000
+IV_10                     0.000
+IV_100                    0.000
+                           ... 
+bachelor_rate             0.000
+born_rate                 0.000
+building_area             0.000
+building_complete_dt      0.000
+building_material         0.000
+building_type             0.000
+building_use              0.000
+city                      0.000
+death_rate                0.000
+divorce_rate              0.000
+doc_rate                  0.000
+elementary_rate           0.000
+highschool_rate           0.000
+jobschool_rate            0.000
+junior_rate               0.000
+land_area                 0.000
+marriage_rate             0.000
+master_rate               0.000
+parking_area              0.000
+parking_price             0.000
+parking_way               0.000
+total_floor               0.000
+town                      0.000
+town_area                 0.000
+town_population           0.000
+town_population_density   0.000
+txn_dt                    0.000
+txn_floor                 0.000
+village                   0.000
+village_income_median     0.000
+Length: 231, dtype: float64
+Stacking Averaged models score: 0.2140 (0.0037)
+stacked rmsle:  0.18478344444887945
+model_xgb rmsle:  0.20147031545008467
+model_lgb:  0.2619106662292168
+RMSLE score on train data: 0.1922216787998226
